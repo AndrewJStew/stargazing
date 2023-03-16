@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import PlanetCardList from './PlanetCardList'
+import './PlanetStyles.css'
 
 
 export default function Planets() {
     const [planetcards, setplanets] = useState(SAMPLE_PLANETCARDS)
     return (
         <PlanetCardList planetcards={planetcards} />
+        
     )
 }
 
