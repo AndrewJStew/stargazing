@@ -1,8 +1,10 @@
 import './App.css';
 
+import StarsContainer from './Pages/StarsContainer.js';
+
 function App() {
   return (
-    <div>Hello World</div>
+    <StarsContainer />
   );
 }
 
