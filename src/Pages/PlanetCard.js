@@ -1,23 +1,100 @@
 import React from 'react'
 import card from '../styles/card.css'
-import neptuneIMG from '../assets/360_F_457951330_Mo8GWUxg1IuEEoYxczcmOiXvdscPB2oo.jpeg'
+import neptuneIMG from '../assets/neptune.jpg'
+import mercuryIMG from '../assets/mercury.jpg'
+import marsIMG from '../assets/mars.jpg'
 
 export default function PlanetCard() {
   return (
-    <div class="card">
-  <img class="card-img-top" src={neptuneIMG} alt="an image of neptune"/>
-  <div class="card-body">
-    <h5 class="card-title">Neptune</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-    // <div className="card text-center">
-    //   <div className="overflow">
-    //     <img src={neptuneIMG} alt=""/>
-    //   </div>
-    //   <div className="card-body text-dark">
-    //     <h4 className="card-title">Neptune</h4>
-    //   </div>
-    // </div>
+    <div className="container">
+      <div className="row g-3">
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={neptuneIMG} alt="An image of neptune" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Neptune</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={mercuryIMG} alt="An image of mercury" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mercury</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={marsIMG} alt="An image of mars" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mars</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row g-3">
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={neptuneIMG} alt="An image of neptune" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Neptune</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={mercuryIMG} alt="An image of mercury" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mercury</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={marsIMG} alt="An image of mars" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mars</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row g-3">
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={neptuneIMG} alt="An image of neptune" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Neptune</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={mercuryIMG} alt="An image of mercury" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mercury</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4">
+          <div className="card">
+            <img src={marsIMG} alt="An image of mars" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Mars</h5>
+              <p className="card-text">This will eventually pull my axios data through</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   )
 }
