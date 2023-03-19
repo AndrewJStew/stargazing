@@ -1,24 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
+import card from '../styles/card.css'
+import neptuneIMG from '../assets/360_F_457951330_Mo8GWUxg1IuEEoYxczcmOiXvdscPB2oo.jpeg'
 
-export default function PlanetCard({ planetcard }) {
-  //constant for the flipping of the planet cards (from image to info)
-  const [flip, setFlip] = useState(false)
-  //Code for flipping cards - once side image, one side info
+export default function PlanetCard() {
   return (
-    <div className={`card ${flip ? 'flip' : ''}`}
-      onClick={() => setFlip(!flip)}
-    >
-      {/*front of card*/}
-      <div className="front">
-        <div className="planet-front">
-          <p>{planetcard.name}</p>
-        </div>
-      </div>
-      <div className="back">
-        <p>{planetcard.mass}</p>
-        <p>{planetcard.radius}</p>
-        <p>{planetcard.temperature}</p>
-      </div>
-    </div>
+    <div class="card">
+  <img class="card-img-top" src={neptuneIMG} alt="an image of neptune"/>
+  <div class="card-body">
+    <h5 class="card-title">Neptune</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    // <div className="card text-center">
+    //   <div className="overflow">
+    //     <img src={neptuneIMG} alt=""/>
+    //   </div>
+    //   <div className="card-body text-dark">
+    //     <h4 className="card-title">Neptune</h4>
+    //   </div>
+    // </div>
   )
 }
