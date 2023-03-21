@@ -1,6 +1,6 @@
 
 
-import StarCard from "./StarCard.js";
+import StarCard from "../components/StarCard.js";
 
 
 function Stars(props) {

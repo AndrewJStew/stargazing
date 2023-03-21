@@ -1,4 +1,4 @@
-import constellations from './../utils/constellations.json';
+import constellations from '../utils/constellations.json';
 
 
 export default function List(props) {

@@ -1,7 +1,7 @@
 
 import List from "./List.js"
 import { useEffect, useState } from "react";
-import Stars from "./Stars.js";
+import Stars from "../Pages/Stars.js";
 import axios from 'axios';
 import StarsInfo from "./StarsInfo.js";
 
@@ -18,7 +18,6 @@ export default function DropdwonMenu() {
 
     useEffect(() => {
         getStarInfo()
-        console.log('kkk');
     }, [search]);
 
     const getStarInfo = () => {
@@ -50,11 +49,11 @@ export default function DropdwonMenu() {
     return (<div className="container">
         <div class="row g-3 m-3 align-items-center">
             <div class="col-auto">
-                <label for="inputPassword6" class="col-form-label text-white fs-2">Select a constellation to start</label>
+                <label for="inputPassword6" class="col-form-label text-white fs-2"></label>
             </div>
             <div class="col-auto">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle large-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Select a constellation to start
                     </button>
                     <ul class="dropdown-menu" style={{ maxHeight: "18em", "overflow-y": "auto" }}>
